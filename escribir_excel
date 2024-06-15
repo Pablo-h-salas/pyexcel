@@ -1,0 +1,16 @@
+from openpyxl import Workbook
+from openpyxl.styles import Font
+import time
+
+book = Workbook()
+sheet = book.active
+
+sheet['A1'] = 5
+sheet['A2'] = 15
+
+book.save('prueba_escritura.xlsx')
+# import sys
+# import os
+
+# print(f"Interprete de Python: {sys.executable}")
+# print(f"Entorno Virtual Activo: {os.getenv('VIRTUAL_ENV')}")
