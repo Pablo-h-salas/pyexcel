@@ -1,14 +1,19 @@
-from openpyxl import Workbook
+# importamos la clase Workbook de la biblioteca openpyxl
+from openpyxl import Workbook       
+
 from openpyxl.styles import Font
 import time
 
+# creamos libro de trabajo y obtenemos referencia a la primer hoja del libro
 book = Workbook()
 sheet = book.active
 
 sheet['A1'] = 5
 sheet['A2'] = 15
 
+# se guarda el libro con el nombre definido entre parentesis
 book.save('prueba_escritura.xlsx')
+
 # import sys
 # import os
 
