@@ -1,0 +1,12 @@
+import openpyxl
+# cargo un archivo de excel y almaceno en la variable book
+book = openpyxl.load_workbook('prueba_escritura.xlsx')
+# obtener referencia a la hoja activa (la hoja activa es la que esta visible cuando se abre el archivo)
+sheet = book.active
+
+# recuperar informacion de las celdas
+a1 = sheet['A1']
+a2 = sheet ['A2']
+
+print(a1.value)
+print(a2.value)
