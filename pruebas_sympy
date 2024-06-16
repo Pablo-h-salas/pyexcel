@@ -1,0 +1,12 @@
+import sympy as sp
+import math
+
+# definir variables simbolicas
+x, y = sp.symbols('x y')
+# definir una expresion simbolica
+expr = sp.sin(x) + sp.sin(y)
+# mostrar la expresion
+print(expr)
+# mostrar la expresion en LaTeX
+latex_expr = sp.latex(expr)
+print("Expresion en LaTeX:",latex_expr)
